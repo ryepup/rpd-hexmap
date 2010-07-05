@@ -1,0 +1,22 @@
+#+TITLE: hex map
+* drawing
+** DONE define hex map in terms of rows/columns, calculate multiplier from there
+   CLOCK: [2010-07-05 Mon 17:11]--[2010-07-05 Mon 18:04] =>  0:53
+Also split out x vs y multiplier
+* modeling
+** use cl-graph to model the hexmap
+ 1. after drawing
+
+    build up row/column and x/y for each hex, then loop over building vertex/edges afterwards?
+
+ 2. before drawing
+    use the row/col limits to generate the graph first, then walk the graph to draw the map?
+
+* interaction
+** highlight a hex on mouseover
+** highlight hexes with a given radius
+* source code
+** refactor in /src folder
+** use unwind-protect in with-hexmap
+** tests?
+** logging framework
